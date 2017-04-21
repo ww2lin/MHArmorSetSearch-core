@@ -96,7 +96,7 @@ public class CharmSearch {
             progress+=increment;
             // go thru the slots
             SlotsLoop:
-            for (int slotNumber = 1; slotNumber <= Constants.MAX_SLOTS; ++slotNumber) {
+            for (int slotNumber = 0; slotNumber <= Constants.MAX_SLOTS; ++slotNumber) {
                 if (onSearchResultProgress != null) {
                     onSearchResultProgress.onProgress((int) initProgress + progress);
                 }
@@ -166,6 +166,7 @@ public class CharmSearch {
                                         if (onSearchResultProgress != null) {
                                             onSearchResultProgress.onProgress(generatedArmorSet);
                                         }
+                                        break SlotsLoop;
                                     }
                                 }
                             }
