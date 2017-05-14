@@ -55,7 +55,7 @@ public class SkillTables {
 
         for (int i = 0; i < skillTables1.size(); ++i) {
             SkillTable table1 = skillTables1.get(i);
-            for (int j = i; j < skillTables2.size(); ++j) {
+            for (int j = 0; j < skillTables2.size(); ++j) {
                 SkillTable table2 = skillTables2.get(j);
                 Map<String, Integer> sum = SkillActivationChart.add(table1.getSkillTable(), table2.getSkillTable());
                 List<DecorationSearch.DecorationForOneEquipment> sumDecorations = new ArrayList<>();

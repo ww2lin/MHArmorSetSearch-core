@@ -115,7 +115,8 @@ public class Decoration {
 
     @Override public String toString() {
         return "Decoration{" +
-            "name='" + name + '\'' +
+            "id=" + id +
+            ", name='" + name + '\'' +
             ", rarity=" + rarity +
             ", slotsNeeded=" + slotsNeeded +
             ", onlineMonsterAvailableAtQuestLevel=" + onlineMonsterAvailableAtQuestLevel +
